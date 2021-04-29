@@ -1,3 +1,13 @@
+//hamburger
+
+let hamburgerBtn = document.querySelector('.hamburger-btn');
+hamburgerBtn.addEventListener('click', function () {
+hamburgerBtn.classList.toggle("change");
+}
+)
+
+
+
 //popup
     var menuToggle = document.querySelector('.page-header__menu-toggle');
     var modalMenuMobile = document.querySelector('.main-nav__wrapper');

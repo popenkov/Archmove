@@ -1,28 +1,27 @@
-/*
+
 @font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/opensans.woff2"),
-      url("../fonts/opensans.woff");
+    font-family: "NewYorkLargeBold";
+    src: url("/build/fonts/NewYorkLargeBold.otf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "SF UI Display Regular";
+    src: url("fonts/SFUIDisplay-Regular.woff2"),
+      url("fonts/SFUIDisplay-Regular.woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Open Sans";
-    src: url("../fonts/opensansbold.woff2"),
-      url("../fonts/opensansbold.woff");
+    font-family: "SF UI Display bold";
+    src: url("fonts/SFUIDisplay-Bold.woff2"),
+      url("fonts/SFUIDisplay-Bold.woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
-*/
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-
- @function get-vw($target) {
-  $vw-context: (1000*.01) * 1px;
-  @return ($target/$vw-context) * 1vw;
-}

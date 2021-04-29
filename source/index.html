@@ -6,17 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="Build your dream house">
   <title>Build your dream house</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
 </head>
 
 <body>
   <header class="header">
+    <div class="header-container">
     <div class="header-logo">
       <a class="header-logo__link">
         <img class="header-logo__img" src="img/svg/logo-arch.svg">
       </a>
     </div>
+
+    <button class="hamburger-btn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button>
 
     <nav class="header-nav">
       <ul class="header-nav__list">
@@ -27,16 +34,18 @@
       </ul>
     </nav>
 
-    <form class="header-search">
-      <input class="header-search__input" type="search" name="request" placeholder="Поиск по сайту"> 
-     </form>
+
 
 
     <div class="header-user-info">
+        <img src="/source/img/svg/loop.svg">
       <a href="#" class="header-user-info__sign-in-btn">Sign In</a>
-      <a href="#" class="header-user-info__sign-up -btn">Sign Up</a>
+      <a href="#" class="header-user-info__sign-up-btn">Sign Up</a>
     </div>
 
+
+
+    </div>
   </header>
 
   <main>
@@ -139,7 +148,7 @@
 
     </section>
 
-    <section class="book-consult"> 
+    <section class="book-consult">
       <h2 class="book-consult__title">Realize your dream project with Archmove</h2>
       <button class="free-sonsult__button">Free consultation</button>
     </section>
@@ -150,32 +159,32 @@
       <ul class="our-partners__list">
 
         <li class="our-partners__list-item">
-          <a href="#" class="our-partners__list-link"> 
-            <img class="our-partners__list-img" src="/img/partners-logo-1.png"> 
+          <a href="#" class="our-partners__list-link">
+            <img class="our-partners__list-img" src="/img/partners-logo-1.png">
           </a>
         </li>
 
         <li class="our-partners__list-item">
-          <a href="#" class="our-partners__list-link"> 
-            <img class="our-partners__list-img" src="/img/partners-logo-2.png"> 
+          <a href="#" class="our-partners__list-link">
+            <img class="our-partners__list-img" src="/img/partners-logo-2.png">
           </a>
         </li>
 
         <li class="our-partners__list-item">
-          <a href="#" class="our-partners__list-link"> 
-            <img class="our-partners__list-img" src="/img/partners-logo-3.png"> 
+          <a href="#" class="our-partners__list-link">
+            <img class="our-partners__list-img" src="/img/partners-logo-3.png">
           </a>
         </li>
 
         <li class="our-partners__list-item">
-          <a href="#" class="our-partners__list-link"> 
-            <img class="our-partners__list-img" src="/img/partners-logo-4.png"> 
+          <a href="#" class="our-partners__list-link">
+            <img class="our-partners__list-img" src="/img/partners-logo-4.png">
           </a>
         </li>
 
         <li class="our-partners__list-item">
-          <a href="#" class="our-partners__list-link"> 
-            <img class="our-partners__list-img" src="/img/partners-logo-5.png"> 
+          <a href="#" class="our-partners__list-link">
+            <img class="our-partners__list-img" src="/img/partners-logo-5.png">
           </a>
         </li>
 
@@ -187,9 +196,10 @@
 
   </main>
 
- 
 
+  <script src="js/script.min.js"></script>
 </body>
 
-  
+
+
 </html>
