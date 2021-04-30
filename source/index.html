@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Build your dream house">
     <title>Build your dream house</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
 </head>
 
@@ -63,43 +65,103 @@
             </div>
         </section>
 
-        <section class="our-work">
+      <!--   <section class="our-work">
             <div class="our-work__container">
-            <h2 class="our-work__title">Build professional valuable room for you</h2>
-            <button class="our-work__slider slider-previous"><img src="img/svg/previous-arrow.svg"></button>
-            <button class="our-work__slider slider-next"><img src="img/svg/next-arrow.svg"></button>
+                <div class="our-work__header">
+            <h2 class="our-work__title">Build professional <br class="our-work__title-brake"> valuable room for you</h2>
+            <div class="our-work__slider-buttons slider__buttons">
+            <button class="our-work__slider-previous slider-previous"><img src="img/svg/previous-arrow.svg"></button>
+            <button class="our-work__slider-next slider-next"><img src="img/svg/next-arrow.svg"></button>
+        </div>
+        </div>
 
+        <div class="our-work__img-container">
             <img class="our-work__img" src="img/our-works-img.jpg">
             <img class="our-work__img" src="img/our-works-img-2.jpg">
             <img class="our-work__img" src="img/our-works-img-3.jpg">
             <img class="our-work__img" src="img/our-works-img-4.jpg">
             </div>
+        </div>
         </section>
+ -->
+
+
+
+
+        <section class="our-work">
+<div class="image-slider swiper-container">
+    <div class="our-work__header">
+        <h2 class="our-work__title">Build professional <br class="our-work__title-brake"> valuable room for you</h2>
+        <div class="our-work__slider-buttons slider__buttons">
+        <button class="our-work__slider-previous "><img src="img/svg/previous-arrow.svg"></button>
+        <button class="our-work__slider-next "><img src="img/svg/next-arrow.svg"></button>
+    </div>
+    </div>
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+        <div class="image-slider__image">
+        <img src="img/our-works-img.jpg">
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="image-slider__image">
+        <img src="img/our-works-img-2.jpg">
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="image-slider__image">
+        <img src="img/our-works-img-3.jpg">
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="image-slider__image">
+        <img src="img/our-works-img-4.jpg">
+        </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- If we need navigation buttons -->
+<!--   <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+ -->
+
+</div>
+</section>
+
 
         <section>
-            <h2 class="our-work__title">Build your needs with Archmove</h2>
-            <img class="our-work__img" src="img/our-team.jpg" alt="our team photography">
+            <h2 class="our-advantages__title">Build your needs with Archmove</h2>
+            <img class="our-advantages__img" src="img/our-team.jpg" alt="our team photography">
 
-            <article class="our-work__advantages">
-                <ul class="our-work__advantages-list">
-                    <li class="our-work__advantages-list-item">
-                        <img class="our-work__advantages-logo advantages-guaranty">
-                        <h3 class="our-work__advantages-title">100% guaranteed project completion</h3>
-                        <p class="our-work__advantages-description">Build safe, comfortable and transparent with a
+            <article class="our-advantages__advantages">
+                <ul class="our-advantages__advantages-list">
+                    <li class="our-advantages__advantages-list-item">
+                        <img class="our-advantages__advantages-logo advantages-guaranty">
+                        <h3 class="our-advantages__advantages-title">100% guaranteed project completion</h3>
+                        <p class="our-advantages__advantages-description">Build safe, comfortable and transparent with a
                             project management application with a joint account.</p>
                     </li>
 
-                    <li class="our-work__advantages-list-item">
-                        <img class="our-work__advantages-logo advantages-fees">
-                        <h3 class="our-work__advantages-title">No additional fees</h3>
-                        <p class="our-work__advantages-description">There are no hidden costs. The value of the offer
+                    <li class="our-advantages__advantages-list-item">
+                        <img class="our-advantages__advantages-logo advantages-fees">
+                        <h3 class="our-advantages__advantages-title">No additional fees</h3>
+                        <p class="our-advantages__advantages-description">There are no hidden costs. The value of the offer
                             you get is the value you paid.</p>
                     </li>
 
-                    <li class="our-work__advantages-list-item">
-                        <img class="our-work__advantages-logo advantages-escort">
-                        <h3 class="our-work__advantages-title">Get escort from the Team</h3>
-                        <p class="our-work__advantages-description">Monitor reports from the Arsitag team who check
+                    <li class="our-advantages__advantages-list-item">
+                        <img class="our-advantages__advantages-logo advantages-escort">
+                        <h3 class="our-advantages__advantages-title">Get escort from the Team</h3>
+                        <p class="our-advantages__advantages-description">Monitor reports from the Arsitag team who check
                             directly in the field.</p>
                     </li>
                 </ul>
@@ -217,8 +279,9 @@
 
     </main>
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 
 
