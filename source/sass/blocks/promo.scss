@@ -1,0 +1,55 @@
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 320px;
+}
+
+.promo-container{
+    width: 86%;
+    min-width: 280px;
+    max-width: 768px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.promo__title{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-family: "NewYorkLargeBold";
+    font-size: 38px;
+    line-height: 32px;
+
+
+
+
+    @media (min-width: $desktop-width) {
+        font-family: "NewYorkLargeBold";
+        font-size: 120px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120px;
+        letter-spacing: -0.04em;
+        text-align: left;
+    }
+}
+
+.promo__title--red {
+ color: $tomato;
+}
+
+.mpomo__description {
+font-family: "SF UI Display Regular";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 160%;
+letter-spacing: 0.01em;
+color: #000000;
+}
+
+.mpomo__photo {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

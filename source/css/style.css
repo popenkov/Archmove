@@ -248,7 +248,7 @@ a {
 .header-user-info__sign-up-btn {
   padding: 4px 24px;
   color: #ffffff;
-  background-color: #FD665E; }
+  background-color: #fd665e; }
 
 .hamburger-btn {
   cursor: pointer;
@@ -282,3 +282,63 @@ a {
 
 .our-work__title {
   font-family: "Bitstream Vera Serif Bold"; }
+
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 320px; }
+
+.promo-container {
+  width: 86%;
+  min-width: 280px;
+  max-width: 768px;
+  margin: 0 auto;
+  border: 1px solid red; }
+
+.promo__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-family: "NewYorkLargeBold";
+  font-size: 38px;
+  line-height: 32px; }
+  @media (min-width: 1150px) {
+    .promo__title {
+      font-family: "NewYorkLargeBold";
+      font-size: 120px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120px;
+      letter-spacing: -0.04em;
+      text-align: left; } }
+
+.promo__title--red {
+  color: #fd665e; }
+
+.mpomo__description {
+  font-family: "SF UI Display Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #000000; }
+
+.mpomo__photo {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.our-work {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 320px; }
+
+.our-work__container {
+  width: 86%;
+  min-width: 280px;
+  max-width: 768px;
+  min-height: 50px;
+  margin: 0 auto;
+  border: 1px solid red;
+  position: relative; }
