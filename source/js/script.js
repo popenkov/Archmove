@@ -10,13 +10,8 @@ function toogleHamburger() {
 };
 
 function showMenu () {
-    navigation.classList.add('header-nav__list--show');
-    userList.classList.add('header-user-info--show');
-}
-
-function closeMenu () {
-    navigation.classList.remove('header-nav__list--show');
-    userList.classList.remove('header-user-info--show');
+    navigation.classList.toggle('header-nav__list--show');
+    userList.classList.toggle('header-user-info--show');
 }
 
 hamburgerBtn.addEventListener('click', function () {
