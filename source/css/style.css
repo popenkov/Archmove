@@ -162,6 +162,19 @@ template {
 [hidden] {
   display: none; }
 
+.free-consult__button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #fd665e;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 600; }
+
 body {
   margin: 0;
   padding: 0;
@@ -228,6 +241,11 @@ a {
 .header-nav__list-item {
   list-style: none;
   padding: 10px 30px; }
+
+.header-user-info__search-button {
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff; }
 
 .header-user-info {
   display: none; }
@@ -365,7 +383,14 @@ a {
 
 .our-work__img {
   /* display: block; */
-  margin-right: 20px; }
+  /* margin-right: 20px; */ }
+
+.our-work__slider-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
 
 .swiper-container {
   width: 86%;
@@ -374,13 +399,16 @@ a {
   min-height: 50px;
   margin: 0 auto;
   border: 1px solid red;
-  overflow: visible; }
+  /* overflow: visible; */ }
 
 .swiper-slide {
   /* margin-right: 20px; */
   /* height: 305px; */
   /*   margin-right: 120px; */
   background: #fff;
+  /*  width: auto; */
+  /* margin-left: 10px; */
+  width: 40%;
   /* display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -392,5 +420,50 @@ a {
 
 .swiper-slide img {
   /* display: block; */
-  /* width: 100%; */
+  width: 100%;
   background-size: cover; }
+
+.advantages {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 320px; }
+
+.advantages__container {
+  width: 86%;
+  min-width: 280px;
+  max-width: 768px;
+  min-height: 50px;
+  margin: 0 auto;
+  border: 1px solid red;
+  position: relative; }
+
+.advantages__advantages-list {
+  margin: 0;
+  padding: 0; }
+
+.advantages__advantages-list-item {
+  position: relative; }
+
+.advantages__advantages-logo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: red; }
+
+.advantages__description {
+  padding-left: 50px; }
+
+.advantages__img {
+  display: none; }
+
+.reviews {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 320px; }
+
+.reviews__container {
+  width: 86%;
+  min-width: 280px;
+  max-width: 768px;
+  margin: 0 auto;
+  border: 1px solid red; }

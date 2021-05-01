@@ -29,7 +29,16 @@ new Swiper('.image-slider', {
         prevEl: '.our-work__slider-previous ',
       },
 
-      slidesPerView: 2
+      spaceBetween: 10,
+
+
+      initialSlide: 0,
+
+      slidesPerView: 2,
+
+      speed: 800,
+
+
 });
 
 

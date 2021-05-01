@@ -1,0 +1,43 @@
+.advantages {
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 320px;
+}
+
+.advantages__container{
+    width: 86%;
+    min-width: 280px;
+    max-width: 768px;
+    min-height: 50px;
+    margin: 0 auto;
+    border: 1px solid red;
+    position: relative;
+}
+
+.advantages__advantages-list {
+    margin: 0;
+    padding: 0;
+}
+
+.advantages__advantages-list-item {
+    position: relative;
+}
+
+.advantages__advantages-logo {
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+    background: red;
+
+
+}
+
+.advantages__description {
+    padding-left: 50px;
+}
+
+.advantages__img {
+    display: none;
+}
+

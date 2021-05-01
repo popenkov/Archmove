@@ -41,7 +41,7 @@
 
 
             <div class="header-user-info">
-                <img src="/source/img/svg/loop.svg">
+                <button class="header-user-info__search-button"><img src="/source/img/svg/loop.svg"></button>
                 <a href="#" class="header-user-info__sign-in-btn">Sign In</a>
                 <a href="#" class="header-user-info__sign-up-btn">Sign Up</a>
             </div>
@@ -97,9 +97,8 @@
         <button class="our-work__slider-next "><img src="img/svg/next-arrow.svg"></button>
     </div>
     </div>
-  <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
-    <!-- Slides -->
+
     <div class="swiper-slide">
         <div class="image-slider__image">
         <img src="img/our-works-img.jpg">
@@ -129,49 +128,53 @@
   </div>
 
 
-  <!-- If we need navigation buttons -->
-<!--   <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
- -->
 
 </div>
 </section>
 
 
-        <section>
-            <h2 class="our-advantages__title">Build your needs with Archmove</h2>
-            <img class="our-advantages__img" src="img/our-team.jpg" alt="our team photography">
+        <section class="advantages">
+            <div class="advantages__container">
+            <h2 class="advantages__title">Build your needs with Archmove</h2>
+            <img class="advantages__img" src="img/our-team.jpg" alt="our team photography">
 
-            <article class="our-advantages__advantages">
-                <ul class="our-advantages__advantages-list">
-                    <li class="our-advantages__advantages-list-item">
-                        <img class="our-advantages__advantages-logo advantages-guaranty">
-                        <h3 class="our-advantages__advantages-title">100% guaranteed project completion</h3>
-                        <p class="our-advantages__advantages-description">Build safe, comfortable and transparent with a
+            <article class="advantages__advantages">
+                <ul class="advantages__advantages-list">
+                    <li class="advantages__advantages-list-item">
+                        <img class="advantages__advantages-logo advantages-guaranty">
+                        <div class="advantages__description">
+                        <h3 class="advantages__advantages-title">100% guaranteed project completion</h3>
+                        <p class="advantages__advantages-description">Build safe, comfortable and transparent with a
                             project management application with a joint account.</p>
+                        </div>
                     </li>
 
-                    <li class="our-advantages__advantages-list-item">
-                        <img class="our-advantages__advantages-logo advantages-fees">
-                        <h3 class="our-advantages__advantages-title">No additional fees</h3>
-                        <p class="our-advantages__advantages-description">There are no hidden costs. The value of the offer
+                    <li class="advantages__advantages-list-item">
+                        <img class="advantages__advantages-logo advantages-fees">
+                        <div class="advantages__description">
+                        <h3 class="advantages__advantages-title">No additional fees</h3>
+                        <p class="advantages__advantages-description">There are no hidden costs. The value of the offer
                             you get is the value you paid.</p>
+                        </div>
                     </li>
 
-                    <li class="our-advantages__advantages-list-item">
-                        <img class="our-advantages__advantages-logo advantages-escort">
-                        <h3 class="our-advantages__advantages-title">Get escort from the Team</h3>
-                        <p class="our-advantages__advantages-description">Monitor reports from the Arsitag team who check
+                    <li class="advantages__advantages-list-item">
+                        <img class="advantages__advantages-logo advantages-escort">
+                        <div class="advantages__description">
+                        <h3 class="advantages__advantages-title">Get escort from the Team</h3>
+                        <p class="advantages__advantages-description">Monitor reports from the Arsitag team who check
                             directly in the field.</p>
+                        </div>
                     </li>
                 </ul>
             </article>
 
-            <button class="free-sonsult__button">Free consultation</button>
-
+            <button class="free-consult__button">Free consultation</button>
+        </div>
         </section>
 
         <section class="reviews">
+            <div class="reviews__container">
 
             <h2 class="reviews__title">Sound Too Good To Be True?</h2>
 
@@ -189,7 +192,7 @@
 
                 </blockquote>
 
-                <blockquote class="reviews__item">
+               <!--  <blockquote class="reviews__item">
                     <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dignissimos
                         accusamus omnis perspiciatis similique labore corporis minima mollitia explicabo cumque, odit,
                         blanditiis voluptate aliquid assumenda repudiandae ducimus quod praesentium ullam!</p>
@@ -209,7 +212,7 @@
 
                     <cite class="reviews__author-name"><span class="reviews__author-name--bold">Anton</span> —
                         Frontend-dev</cite>
-                </blockquote>
+                </blockquote> -->
 
             </div>
 
@@ -228,12 +231,12 @@
                 </button>
 
             </div>
-
+        </div>
         </section>
 
         <section class="book-consult">
             <h2 class="book-consult__title">Realize your dream project with Archmove</h2>
-            <button class="free-sonsult__button">Free consultation</button>
+            <button class="free-consult__button">Free consultation</button>
         </section>
 
         <section class="our-partners">

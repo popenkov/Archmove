@@ -42,12 +42,13 @@
 .our-work__img {
     ///////
     /* display: block; */
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 
 .our-work__slider-buttons {
-
+ display: flex;
+ flex-wrap: nowrap;
 }
 
 
@@ -59,7 +60,8 @@
     min-height: 50px;
     margin: 0 auto;
     border: 1px solid red;
-    overflow: visible;
+    /////////
+    /* overflow: visible; */
   }
 
 
@@ -70,6 +72,9 @@
     /* height: 305px; */
   /*   margin-right: 120px; */
     background: #fff;
+   /*  width: auto; */
+   /* margin-left: 10px; */
+   width: 40%;
 
 
 
@@ -88,6 +93,6 @@
 
 
 
-    /* width: 100%; */
+    width: 100%;
     background-size: cover;
   }
