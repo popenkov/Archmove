@@ -1,6 +1,8 @@
 // Определяем переменную "preprocessor"
 /* let preprocessor = 'sass';  */
 
+var gulp = require('gulp');
+
 const { src, dest, parallel, series, watch } = require('gulp');
 
 const browserSync = require('browser-sync').create();
@@ -10,6 +12,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 // Подключаем модуль gulp-clean-css
 const cleancss = require('gulp-clean-css');
+const ghPages = require('gulp-gh-pages');
 
 
 // Определяем логику работы Browsersync
@@ -45,3 +48,10 @@ watch('source/**/*.html').on('change', browserSync.reload);
 }
 
 exports.default = parallel(styles, browsersync, startwatch);
+
+gulp.task('deploy', function() {
+    return gulp.src('./source/**/*')
+      .pipe(ghPages());
+  });
+
+

@@ -50,12 +50,12 @@ function closeMenuOnEsc  (evt) {
 
 //popup
 let form = document.querySelector('.popup-form');
-var searchButton = document.querySelector('.header-user-info__search-button');
-var modalSearchWindow = document.querySelector('.popup');
-var searchInput = document.querySelector('.popup-input');
-var searchCloseBtn = document.querySelector('.popup__close-input');
+let searchButton = document.querySelector('.header-user-info__search-button');
+let modalSearchWindow = document.querySelector('.popup');
+let searchInput = document.querySelector('.popup-input');
+let searchCloseBtn = document.querySelector('.popup__close-input');
 let submitSearchBtn = document.querySelector('.popup__close-input');
-var modalSendRequestButton = document.querySelector('.popup__submit-input');
+let modalSendRequestButton = document.querySelector('.popup__submit-input');
 let siteBody = document.querySelector('body');
 
 
