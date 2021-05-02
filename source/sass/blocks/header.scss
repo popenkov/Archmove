@@ -12,18 +12,18 @@
     min-width: 280px;
     min-height: 50px;
     margin: 0 auto;
-    border: 1px solid red;
+
 
     position: relative;
 
     @media (min-width: $tablet-width) {
-        border: 1px solid green;
+
         max-width: $desktop-container;
     }
 
     @media (min-width: $desktop-width) {
         max-width:1338px;
-        border: 1px solid blue;
+
 
         margin: 28px auto;
 

@@ -10,16 +10,13 @@
     max-width: 768px;
     min-height: 50px;
     margin: 0 auto;
-    border: 1px solid red;
     position: relative;
 
     @media (min-width: $tablet-width) {
-        border: 1px solid green;
         max-width: $desktop-container;
     }
 
     @media (min-width: $desktop-width) {
-        border: 1px solid blue;
     }
 }
 

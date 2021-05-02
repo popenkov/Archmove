@@ -12,16 +12,16 @@
     position: relative;
 
     margin: 0 auto;
-    border: 1px solid red;
+
 
     @media (min-width: $tablet-width) {
         min-height: 350px;
-        border: 1px solid green;
+
         max-width: $desktop-container;
     }
 
     @media (min-width: $desktop-width) {
-        border: 1px solid blue;
+
     }
 
 }

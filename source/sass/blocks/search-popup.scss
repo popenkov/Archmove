@@ -1,0 +1,77 @@
+
+
+
+.popup {
+
+transform: translateY(-999999999px);
+
+    }
+
+    .popup-show {
+        transform: translateY(0px);
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-180px);
+
+
+        width: 360px;
+
+    }
+
+
+    .popup-input {
+        box-sizing: border-box;
+    position: relative;
+    height:30px;
+    width: 100%;
+
+    padding: 5px 30px; // горизонтальные паддинги кнопки сабмита и кнопки закрытия
+
+    }
+    .popup__submit-input {
+        cursor: pointer;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    z-index: 1;
+    border: none;
+    background-color: #fff;
+  /*  border: 1px solid red; */
+
+
+    }
+
+
+    .popup__close-input  {
+        cursor: pointer;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        width: 28px;
+        height: 28px;
+        opacity: 0.3;
+        border: none;
+    background-color: #fff;
+   /*  border: 1px solid red; */
+
+
+        &:hover {
+        opacity: 1;
+        }
+        &:before, &:after {
+        position: absolute;
+        left: 15px;
+        top: 2px;
+        content: ' ';
+        height: 23px;
+        width: 2px;
+        background-color: #333;
+        }
+        &:before {
+        transform: rotate(45deg);
+        }
+        &:after {
+        transform: rotate(-45deg);
+        }
+    }

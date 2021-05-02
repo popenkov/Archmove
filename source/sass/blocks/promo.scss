@@ -9,16 +9,14 @@
     min-width: 280px;
     max-width: 768px;
     margin: 0 auto;
-    border: 1px solid red;
+
 
     @media (min-width: $tablet-width) {
-        border: 1px solid green;
+
         max-width: $desktop-container;
     }
 
-    @media (min-width: $desktop-width) {
-        border: 1px solid blue;
-    }
+
 }
 
 .promo__title{

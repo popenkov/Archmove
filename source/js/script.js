@@ -21,6 +21,25 @@ hamburgerBtn.addEventListener('click', function () {
 }
 )
 
+//escape
+
+function closeMenuOnEsc  (evt) {
+    evt.preventDefault();
+    if (evt.keyCode == ESCAPE_BUTTON && navigation.classList.contains('header-nav__list--show')) {
+        navigation.classList.remove('header-nav__list--show');
+        userList.classList.remove('header-user-info--show');
+    }
+}
+
+
+
+    document.addEventListener('keydown', closeMenuOnEsc);
+
+
+
+
+
+
 
 //swiper images
 new Swiper('.image-slider', {
@@ -65,63 +84,54 @@ new Swiper('.reviews-slider', {
 
 
 
-///SLIDER
-
-let slideIndex = 1;
-let slides = document.querySelectorAll('.our-work__img');
-let prev = document.querySelector('.our-work__slider-previous');
-let next = document.querySelector('.our-work__slider-next');
-
-function showSlides(n) {
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  slides.forEach((item) => {
-    item.style.display = "none"
-  });
-
-   slides[slideIndex - 1].style.display = "block";
-
-}
-
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-
-prev.addEventListener('click', function (evt) {
-  plusSlides(-1);
-})
-
-next.addEventListener('click', function (evt) {
-  plusSlides(1);
-})
-
-
-
-
 
 
 //popup
-/*
 
 
 
+    var searchButton = document.querySelector('.header-user-info__search-button');
+    var modalSearchWindow = document.querySelector('.popup');
+    var searchInput = document.querySelector('.popup-input');
 
-    var orderButton = document.querySelector('.item-of-the-week__button');
-    var modalOrderWindow = document.querySelector('.modal-window');
-    var pageBodyContainer = document.querySelector('.body_container');
+
+
     var siteBody = document.querySelector('body');
-    var modalSendRequestButton = document.querySelector('.modal-window__button');
+
+    var modalSendRequestButton = document.querySelector('.popup__submit-input');
     var ESCAPE_BUTTON = '27';
 
+    function openSearchPanel () {
+        modalSearchWindow.classList.remove('popup');
+        modalSearchWindow.classList.add('popup-show');
+
+    }
+
+    function closeSearchPanel () {
+        modalSearchWindow.classList.add('popup');
+        modalSearchWindow.classList.remove('popup-show');
+    }
+
+
+    function closeHamburger () {
+        navigation.classList.remove('header-nav__list--show');
+    userList.classList.remove('header-user-info--show');
+    hamburgerBtn.classList.toggle("change");
+    }
+
+    searchButton.addEventListener ('click', function () {
+        /* modalSearchWindow.classList.toggle('popup-show'); */
+        closeHamburger();
+        openSearchPanel();
+    })
+
+
+
+
+
+
+
+/*
     var closePopUp = function (evt) {
       evt.preventDefault();
       modalOrderWindow.classList.remove('modal-window--show');
@@ -152,47 +162,6 @@ next.addEventListener('click', function (evt) {
 
     orderButton.addEventListener('click', openPopUp)
     document.addEventListener('keydown', closePopUpOnEsc);
-    modalSendRequestButton.addEventListener('click', closePopUp);
+    modalSendRequestButton.addEventListener('click', closePopUp); */
 
 
-
-//slider
-    let slideIndex = 1;
-    let slides = document.querySelectorAll('.reviews__item');
-    let prev = document.querySelector('.slider__toggle--before');
-    let next = document.querySelector('.slider__toggle--next');
-
-    function showSlides(n) {
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-
-      slides.forEach((item) => {
-        item.style.display = "none"
-      });
-
-      slides[slideIndex - 1].style.display = "block";
-
-    }
-
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-
-    prev.addEventListener('click', function (evt) {
-      plusSlides(-1);
-    })
-
-    next.addEventListener('click', function (evt) {
-      plusSlides(1);
-    })
-
-
- */
