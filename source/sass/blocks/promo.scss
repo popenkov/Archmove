@@ -10,6 +10,11 @@
     max-width: 768px;
     margin: 0 auto;
     border: 1px solid red;
+
+    @media (min-width: $tablet-width) {
+        border: 1px solid green;
+        max-width: $desktop-container;
+    }
 }
 
 .promo__title{
@@ -20,7 +25,10 @@
     font-size: 50px;
     line-height: 50px;
 
-
+    @media (min-width: $tablet-width){
+        font-size: 90px;
+        line-height: 90px;
+    }
 
 
 
@@ -35,7 +43,22 @@
  color: $tomato;
 }
 
-.mpomo__description {
+.promo__description-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.promo__description {
+    @media (min-width: $tablet-width) {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.promo__p {
 font-family: 'SF UI Display';
 font-style: normal;
 font-weight: normal;
@@ -44,14 +67,24 @@ line-height: 160%;
 letter-spacing: 0.01em;
 color: #000000;
 
+@media (min-width: $tablet-width){
+    font-size: 16px;
+}
+
 @media (min-width: $desktop-width) {
     font-size: 16px;
-    line-height: 160%;
 }
 }
 
-.mpomo__photo {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+.promo__photo {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
 }
+

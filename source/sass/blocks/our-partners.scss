@@ -11,15 +11,22 @@
         margin: 0 auto;
         border: 1px solid red;
 
+        @media (min-width: $tablet-width) {
+            border: 1px solid green;
+            max-width: $desktop-container;
+        }
+
 }
 
 .our-partners__title {
     font-family: 'New York Extra Large Bold';
     font-size: 30px;
-    line-height: 124%
+    line-height: 124%;
 
 
-
+    @media (min-width: $tablet-width) {
+        font-size: 42px;
+    }
 
 
 /*     @media (min-width: $desktop-width) {

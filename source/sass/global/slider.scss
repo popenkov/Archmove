@@ -17,7 +17,7 @@
     /* margin-right: 20px; */
     /* height: 305px; */
   /*   margin-right: 120px; */
-    background: #fff;
+    /* background: #fff; */
    /*  width: auto; */
    /* margin-left: 10px; */
  /*   width: 40%; */
@@ -42,3 +42,17 @@
     width: 100%;
     background-size: cover;
   }
+
+
+  .our-work__slider-button
+   {
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+  }
+
+  .reviews-slider__toggle
+ {
+    border: none;
+    padding: 10px;
+ }

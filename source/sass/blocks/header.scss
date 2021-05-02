@@ -3,6 +3,10 @@
     width: 100%;
     min-width: 380px;
 
+    @media (min-width: $tablet-width) {
+
+    }
+
 }
 
 .header-container{
@@ -15,6 +19,11 @@
 
     position: relative;
 
+    @media (min-width: $tablet-width) {
+        border: 1px solid green;
+        max-width: $desktop-container;
+    }
+
 
 }
 
@@ -23,6 +32,11 @@
     position: absolute;
     left: 0;
     top: 5px;
+
+    @media (min-width: $tablet-width) {
+        left: 10px;
+    top: 7px;
+    }
 }
 
 
@@ -43,6 +57,10 @@
     font-size: 14px;
     line-height: 40px;
     color: $brownFont;
+
+    @media (min-width: $tablet-width){
+        font-size: 18px;
+    }
 }
 
 .header-nav__list--show {
@@ -77,12 +95,24 @@ background-color: #ffffff;
 
 .header-user-info {
     display: none;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 70px;
+    }
 }
 
 .header-user-info--show {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
 }
 
 .header-user-info__sign-in-btn {
@@ -121,6 +151,11 @@ line-height: 40px;
     position: absolute;
     right: 0;
     top: 5px;
+
+    @media (min-width: $tablet-width) {
+        right: 10px;
+    top: 7px;
+    }
 
 }
 .bar1, .bar2, .bar3 {

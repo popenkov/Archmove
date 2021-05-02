@@ -2,6 +2,7 @@
     background-color: #ffffff;
     width: 100%;
     min-width: 380px;
+    border-top: 1px solid #F0F0F0;
 }
 
 .footer__container {
@@ -11,9 +12,17 @@
         margin: 0 auto;
         border: 1px solid red;
 
+        @media (min-width: $tablet-width) {
+            padding: 20px 0;
+            border: 1px solid green;
+            max-width: $desktop-container;
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
 
-        /* display: flex;
-        justify-content: space-between; */
+
+
 
 }
 
@@ -27,9 +36,7 @@
 
 }
 
-/* .footer__link-item {
-    margin-right: 20px;
-} */
+
 
 .footer__link {
 
@@ -44,5 +51,7 @@
 .footer-logo {
     margin: 20px 0;
     text-align: center;
-
+    @media (min-width: $tablet-width) {
+        margin-right: 10px;
+    }
 }
