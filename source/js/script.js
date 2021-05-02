@@ -32,7 +32,7 @@ new Swiper('.image-slider', {
       spaceBetween: 10,
 
 
-      initialSlide: 0,
+      initialSlide: 1,
 
       slidesPerView: 2,
 

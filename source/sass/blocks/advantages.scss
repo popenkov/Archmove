@@ -17,6 +17,10 @@
         border: 1px solid green;
         max-width: $desktop-container;
     }
+
+    @media (min-width: $desktop-width) {
+        border: 1px solid blue;
+    }
 }
 
 .advantages__title {
@@ -33,11 +37,11 @@
 
 
 
-/*     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
         font-family: 'New York Extra Large Bold';
         font-size: 48px;
     line-height: 124%;
-    } */
+    }
 }
 
 .advantages__description-wrapper {
@@ -58,11 +62,22 @@
 
         background-repeat: no-repeat;
     }
+
+    @media (min-width: $desktop-width) {
+        width: 48%;
+        background-size: 100% 100%;
+    }
 }
 
 .advantages__advantages {
     @media (min-width: $tablet-width) {
         width: 45%;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 30%;
+        margin-right: 40px;
+
     }
 }
 
@@ -112,6 +127,10 @@ color: #000000;
 
 .advantages__advantages-logo {
     position: absolute;
+    @media (min-width: $desktop-width) {
+        left: -40px;
+    }
+
 }
 
 .advantages-guaranty {

@@ -20,6 +20,10 @@
         max-width: $desktop-container;
     }
 
+    @media (min-width: $desktop-width) {
+        border: 1px solid blue;
+    }
+
 }
 
 .reviews__title {
@@ -38,11 +42,11 @@
     }
 
 
-/*     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
 
         font-size: 48px;
     line-height: 124%;
-    } */
+    }
 }
 
 .reviews__blockquote-icon {
@@ -55,6 +59,11 @@
         left: 170px;
     }
 
+    @media (min-width: $desktop-width) {
+        width: 57px;
+        left: 270px;
+    }
+
 }
 
 .reviews-slider {
@@ -63,6 +72,10 @@
 
     @media (min-width: $tablet-width) {
         margin-left: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: 370px;
     }
 
 }
@@ -93,10 +106,10 @@ color: #000000;
     font-size: 22px;
 }
 
-/*     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
 font-size: 32px;
 line-height: 160%;
-    } */
+    }
 
 }
 

@@ -8,6 +8,8 @@ background: linear-gradient(to bottom, #F9F9F9 22% , #fff 100%);
 
     }
 
+
+
 }
 
 .book-consult__container {
@@ -33,14 +35,27 @@ background: linear-gradient(to bottom, #F9F9F9 22% , #fff 100%);
         background-position: -50px -20px;
 
     }
+
+    @media (min-width: $desktop-width) {
+        border: 1px solid blue;
+        min-height: 887px;
+        background-size: 60%;
+        background-position: -50px 40px;
+    }
 }
 
 .book-consult__description-container {
+    margin: 0;
     @media (min-width: $tablet-width) {
 
          width: 45%;
-         margin-right: 10px;
+
          /* margin-left: 46% */;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 45%;
+     margin-top: 150px;
     }
 }
 
@@ -58,13 +73,18 @@ background: linear-gradient(to bottom, #F9F9F9 22% , #fff 100%);
     }
 
 
-/*     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
 
         font-size: 48px;
     line-height: 124%;
-    } */
+    }
 }
 
 .book-consult__button {
     margin: 30px auto;
+
+    @media (min-width: $desktop-width) {
+        margin: 0;
+        margin-top: 70px;
+    }
 }

@@ -15,6 +15,10 @@
         border: 1px solid green;
         max-width: $desktop-container;
     }
+
+    @media (min-width: $desktop-width) {
+        border: 1px solid blue;
+    }
 }
 
 .promo__title{
@@ -32,11 +36,12 @@
 
 
 
-/*     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
         font-family: 'New York Extra Large Bold';
         font-size: 120px;
         line-height: 120px;
-    } */
+        margin-bottom: 47px;
+    }
 }
 
 .promo__title--red {
@@ -52,8 +57,12 @@
 .promo__description {
     @media (min-width: $tablet-width) {
         width: 45%;
-        display: flex;
-        flex-direction: column;
+
+
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 30%;
 
     }
 }
@@ -85,6 +94,18 @@ color: #000000;
         height: auto;
         object-fit: cover;
         background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 68%;
+        object-fit: contain;
+    }
+}
+
+.promo__consult-button {
+    @media (min-width: $desktop-width) {
+        margin: 0;
+        margin-top: 55px;
     }
 }
 
