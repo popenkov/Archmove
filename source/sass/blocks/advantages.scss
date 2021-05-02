@@ -1,7 +1,7 @@
 .advantages {
     background-color: #ffffff;
     width: 100%;
-    min-width: 320px;
+    min-width: 380px;
 }
 
 .advantages__container{
@@ -14,6 +14,25 @@
     position: relative;
 }
 
+.advantages__title {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    font-family: 'New York Extra Large Bold';
+    font-size: 30px;
+    line-height: 124%
+
+
+
+
+
+/*     @media (min-width: $desktop-width) {
+        font-family: 'New York Extra Large Bold';
+        font-size: 48px;
+    line-height: 124%;
+    } */
+}
+
 .advantages__advantages-list {
     margin: 0;
     padding: 0;
@@ -23,21 +42,61 @@
     position: relative;
 }
 
-.advantages__advantages-logo {
-    position: absolute;
-
-    width: 40px;
-    height: 40px;
-    background: red;
 
 
-}
 
 .advantages__description {
-    padding-left: 50px;
+    padding-left: 60px;
+    margin-bottom: 30px;
+}
+
+.advantages__advantages-title {
+
+    font-family:'SF UI Display';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 160%;
+letter-spacing: 0.01em;
+color: #000000;
+}
+
+.advantages__advantages-description {
+    margin: 0;
+    padding: 0;
+    font-family:'SF UI Display';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 160%;
+letter-spacing: 0.01em;
+
+color: #000000;
 }
 
 .advantages__img {
     display: none;
 }
+
+.advantages__advantages-logo {
+    position: absolute;
+}
+
+.advantages-guaranty {
+    width: 48px;
+    height: 55.08px;
+}
+
+.advantages-fees {
+    width: 39px;
+    height: 48px;
+}
+
+
+.advantages-escort {
+    width: 40px;
+    height: 53px;
+}
+
+
 

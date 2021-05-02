@@ -1,0 +1,33 @@
+.book-consult {
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 380px;
+}
+
+.book-consult__container {
+    width: 86%;
+    max-width: 768px;
+
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.book-consult__title {
+    font-family: 'New York Extra Large Bold';
+    font-size: 30px;
+    line-height: 124%
+
+
+
+
+
+/*     @media (min-width: $desktop-width) {
+
+        font-size: 48px;
+    line-height: 124%;
+    } */
+}
+
+.free-consult__button {
+    margin: 30px auto;
+}

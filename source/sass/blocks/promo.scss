@@ -1,7 +1,7 @@
 .promo {
     background-color: #ffffff;
     width: 100%;
-    min-width: 320px;
+    min-width: 380px;
 }
 
 .promo-container{
@@ -16,22 +16,19 @@
     margin: 0;
     padding: 0;
     margin-top: 20px;
-    font-family: "NewYorkLargeBold";
-    font-size: 38px;
-    line-height: 32px;
+    font-family: 'New York Extra Large Bold';
+    font-size: 50px;
+    line-height: 50px;
 
 
 
 
-    @media (min-width: $desktop-width) {
-        font-family: "NewYorkLargeBold";
+
+/*     @media (min-width: $desktop-width) {
+        font-family: 'New York Extra Large Bold';
         font-size: 120px;
-        font-style: normal;
-        font-weight: 700;
         line-height: 120px;
-        letter-spacing: -0.04em;
-        text-align: left;
-    }
+    } */
 }
 
 .promo__title--red {
@@ -39,13 +36,18 @@
 }
 
 .mpomo__description {
-font-family: "SF UI Display Regular";
+font-family: 'SF UI Display';
 font-style: normal;
 font-weight: normal;
-font-size: 16px;
+font-size: 13px;
 line-height: 160%;
 letter-spacing: 0.01em;
 color: #000000;
+
+@media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 160%;
+}
 }
 
 .mpomo__photo {

@@ -22,7 +22,7 @@ hamburgerBtn.addEventListener('click', function () {
 )
 
 
-//swiper
+//swiper images
 new Swiper('.image-slider', {
     navigation: {
         nextEl: '.our-work__slider-next ',
@@ -40,6 +40,25 @@ new Swiper('.image-slider', {
 
 
 });
+
+//swiper reviews
+new Swiper('.reviews-slider', {
+    navigation: {
+        nextEl: '.reviews-slider__toggle--next',
+        prevEl: '.reviews-slider__toggle--before',
+      },
+
+      autoHeight: true,
+
+      initialSlide: 0,
+
+      slidesPerView: 1,
+
+      speed: 800,
+
+
+});
+
 
 
 

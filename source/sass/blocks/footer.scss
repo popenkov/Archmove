@@ -1,0 +1,48 @@
+.footer {
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 380px;
+}
+
+.footer__container {
+
+        width: 86%;
+
+        margin: 0 auto;
+        border: 1px solid red;
+
+
+        /* display: flex;
+        justify-content: space-between; */
+
+}
+
+.footer__link-list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/* .footer__link-item {
+    margin-right: 20px;
+} */
+
+.footer__link {
+
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #585858;
+    padding: 10px;
+}
+
+
+.footer-logo {
+    margin: 20px 0;
+    text-align: center;
+
+}

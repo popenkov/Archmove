@@ -1,7 +1,7 @@
 .header {
     background-color: #ffffff;
     width: 100%;
-    min-width: 320px;
+    min-width: 380px;
 
 }
 
@@ -22,11 +22,12 @@
 .header-logo {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 5px;
 }
 
 
 .header-nav {
+
 }
 
 
@@ -36,6 +37,12 @@
     ///////////////
     display: none;
 
+}
+
+.header-nav__list-link {
+    font-size: 14px;
+    line-height: 40px;
+    color: $brownFont;
 }
 
 .header-nav__list--show {
@@ -80,8 +87,10 @@ background-color: #ffffff;
 
 .header-user-info__sign-in-btn {
 
-    color: #585858;
+    color: $brownFont;
     padding: 4px 24px;
+    font-size: 14px;
+line-height: 40px;
 }
 
 .header-user-info__sign-up-btn{
@@ -89,6 +98,9 @@ background-color: #ffffff;
     padding: 4px 24px;
     color: #ffffff;
     background-color: $tomato;
+    border-radius: 4px;
+    font-size: 14px;
+line-height: 40px;
 }
 
 
