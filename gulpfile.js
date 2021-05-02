@@ -18,7 +18,7 @@ const ghPages = require('gulp-gh-pages');
 // Определяем логику работы Browsersync
 function browsersync() {
     browserSync.init({ // Инициализация Browsersync
-        server: { baseDir: 'source' }, // Указываем папку сервера
+        server: { baseDir: 'source/' }, // Указываем папку сервера
         notify: false, // Отключаем уведомления
         online: true // Режим работы: true или false
     })
@@ -50,7 +50,7 @@ watch('source/**/*.html').on('change', browserSync.reload);
 exports.default = parallel(styles, browsersync, startwatch);
 
 gulp.task('deploy', function() {
-    return gulp.src('./source/**/*')
+    return gulp.src('source/**/*')
       .pipe(ghPages());
   });
 
