@@ -268,36 +268,17 @@ li {
 a {
   text-decoration: none; }
 
+.body__no-scroll {
+  height: 100%;
+  overflow: hidden; }
+
 .swiper-container {
-  width: auto;
-  /* min-width: 280px; */
-  /*  max-width: 768px;
-    min-height: 50px;
-    margin: 0 auto; */
-  /* overflow: visible; */ }
+  width: auto; }
 
 .swiper-container {
   margin: 0; }
 
-.swiper-slide {
-  /* margin-right: 20px; */
-  /* height: 305px; */
-  /*   margin-right: 120px; */
-  /* background: #fff; */
-  /*  width: auto; */
-  /* margin-left: 10px; */
-  /*   width: 40%; */
-  /* display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-
-    align-items: center; */
-  /* width: auto; */ }
-
 .swiper-slide img {
-  /* display: block; */
   width: 100%;
   background-size: cover; }
 
@@ -599,10 +580,20 @@ a {
           -ms-flex-pack: end;
               justify-content: flex-end; } }
 
-@media (min-width: 1440px) {
-  .image-slider {
-    width: 68%;
-    overflow: visible; } }
+.image-slider {
+  overflow: visible; }
+  @media (min-width: 1440px) {
+    .image-slider {
+      width: 68%;
+      overflow: visible; } }
+
+/* .image-slider__image {
+    height: 432px;
+} */
+.image-slider__image-img {
+  height: 432px;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .our-work__header {
   display: -webkit-box;
@@ -921,6 +912,8 @@ a {
       margin-top: 150px; } }
 
 .book-consult__title {
+  margin: 0;
+  padding: 30px 0;
   font-family: 'New York Extra Large Bold';
   font-size: 30px;
   line-height: 124%;

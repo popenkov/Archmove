@@ -30,11 +30,21 @@
 }
 
 .image-slider {
+    overflow: visible;
     @media (min-width: $desktop-width) {
         width: 68%;
         overflow: visible;
 
     }
+}
+
+/* .image-slider__image {
+    height: 432px;
+} */
+
+.image-slider__image-img{
+    height: 432px;
+    object-fit: cover;
 }
 
 .our-work__header{

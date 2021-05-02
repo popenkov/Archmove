@@ -56,19 +56,20 @@ var searchInput = document.querySelector('.popup-input');
 var searchCloseBtn = document.querySelector('.popup__close-input');
 let submitSearchBtn = document.querySelector('.popup__close-input');
 var modalSendRequestButton = document.querySelector('.popup__submit-input');
-
+let siteBody = document.querySelector('body');
 
 
 
     function openSearchPanel () {
+        siteBody.classList.add('body__no-scroll');
         modalSearchWindow.classList.remove('popup');
         modalSearchWindow.classList.add('popup-show');
-        searchInput.focus()
+        searchInput.focus();
 
     }
 
     function closeSearchPanel () {
-
+        siteBody.classList.remove('body__no-scroll');
         modalSearchWindow.classList.add('popup');
         modalSearchWindow.classList.remove('popup-show');
         searchInput.value= null;
@@ -82,15 +83,16 @@ var modalSendRequestButton = document.querySelector('.popup__submit-input');
     }
 
     function sendSearchRequest () {
-
         alert(`You have enterered: ${searchInput.value}`);
-        searchInput.value= null;
+        searchInput.value = null;
     }
 
 
     searchButton.addEventListener ('click', function () {
+        if (hamburgerBtn.classList.contains('change')) {
+            closeHamburger();
+        }
 
-        closeHamburger();
         openSearchPanel();
     })
 
@@ -113,7 +115,10 @@ var modalSendRequestButton = document.querySelector('.popup__submit-input');
 
 
     searchInput.addEventListener("blur", function () {
-        closeSearchPanel();
+        if (searchInput.value == null || searchInput.value =="") {
+            closeSearchPanel();
+        }
+
     })
 
 
@@ -124,52 +129,5 @@ var modalSendRequestButton = document.querySelector('.popup__submit-input');
 
 
 
-//popup
-
-
-
- /*
-
-
-     */
-
-
-
-
-
-
-
-/*
-    var closePopUp = function (evt) {
-      evt.preventDefault();
-      modalOrderWindow.classList.remove('modal-window--show');
-      pageBodyContainer.classList.remove('body_container--filter');
-      siteBody.classList.remove('body__no-scroll');
-
-    }
-
-    var closePopUpOnEsc = function (evt) {
-      evt.preventDefault();
-      if (evt.keyCode == ESCAPE_BUTTON && modalOrderWindow.classList.contains('modal-window--show')) {
-        modalOrderWindow.classList.remove('modal-window--show');
-        pageBodyContainer.classList.remove('body_container--filter');
-        siteBody.classList.remove('body__no-scroll');
-      }
-
-    }
-
-
-    var openPopUp = function (evt) {
-      evt.preventDefault();
-
-      pageBodyContainer.classList.toggle('body_container--filter');
-      modalOrderWindow.classList.add('modal-window--show');
-      siteBody.classList.add('body__no-scroll');
-
-    }
-
-    orderButton.addEventListener('click', openPopUp)
-    document.addEventListener('keydown', closePopUpOnEsc);
-    modalSendRequestButton.addEventListener('click', closePopUp); */
 
 

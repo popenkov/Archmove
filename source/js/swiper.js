@@ -1,4 +1,3 @@
-//swiper images
 new Swiper('.image-slider', {
     navigation: {
         nextEl: '.our-work__slider-next ',
@@ -8,11 +7,28 @@ new Swiper('.image-slider', {
       spaceBetween: 10,
 
 
-      initialSlide: 1,
+      initialSlide: 0,
 
-      slidesPerView: 2,
+
 
       speed: 800,
+
+      height: 500,
+
+      breakpoints: {
+        '@0.40': {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        '@0.75': {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        '@1.50': {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      }
 
 
 });
