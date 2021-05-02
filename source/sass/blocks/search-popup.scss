@@ -2,28 +2,44 @@
 
 
 .popup {
+    position: absolute;
+transform: translateY(-120px);
 
-transform: translateY(-999999999px);
-
+        left: 25%;
+        width: 50%;
+transition: transform 0.5s ease-out;
     }
 
     .popup-show {
         transform: translateY(0px);
         position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-180px);
+        top: 5px;
+
+        /* margin-left: -25%; */
+        /* transform: translateX(-180px); */
 
 
-        width: 360px;
+        left: 25%;
+        width: 50%;
+        transition: transform 1s ease-out;
 
+        z-index: 2;
+
+        @media (min-width: $tablet-width) {
+
+            top: 10px;
+        }
+
+        @media (min-width: $desktop-width) {
+            top: 30px;
+        }
     }
 
 
     .popup-input {
         box-sizing: border-box;
     position: relative;
-    height:30px;
+    height:50px;
     width: 100%;
 
     padding: 5px 30px; // горизонтальные паддинги кнопки сабмита и кнопки закрытия
@@ -33,7 +49,7 @@ transform: translateY(-999999999px);
         cursor: pointer;
     position: absolute;
     left: 2px;
-    top: 5px;
+    top: 15px;
     z-index: 1;
     border: none;
     background-color: #fff;
@@ -46,8 +62,8 @@ transform: translateY(-999999999px);
     .popup__close-input  {
         cursor: pointer;
         position: absolute;
-        right: 1px;
-        top: 1px;
+        right: 2px;
+        top: 15px;
         width: 28px;
         height: 28px;
         opacity: 0.3;
