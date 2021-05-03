@@ -16,18 +16,18 @@ new Swiper('.image-slider', {
       height: 500,
 
       breakpoints: {
-        '@0.40': {
+        '@0.45': {
           slidesPerView: 2,
           spaceBetween: 20,
         },
         '@0.75': {
           slidesPerView: 3,
-          spaceBetween: 40,
+          spaceBetween: 20,
         },
-        '@1.50': {
+        /* '@1.60': {
           slidesPerView: 4,
-          spaceBetween: 50,
-        },
+          spaceBetween: 20,
+        }, */
       }
 
 
