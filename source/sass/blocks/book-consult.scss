@@ -33,6 +33,12 @@ background: linear-gradient(to bottom, #F9F9F9 22% , #fff 100%);
         background-size: 60%;
         background-position: -50px -20px;
 
+        @media (min-resolution: 2dppx) {
+
+            background-image: url(../img/book-consult-img-2x.png);
+        }
+
+
     }
 
     @media (min-width: $desktop-width) {
@@ -40,6 +46,8 @@ background: linear-gradient(to bottom, #F9F9F9 22% , #fff 100%);
         min-height: 887px;
         background-size: 60%;
         background-position: -50px 40px;
+
+
     }
 }
 

@@ -353,6 +353,8 @@ a {
   font-size: 14px;
   line-height: 40px;
   color: #585858; }
+  .header-nav__list-link:hover {
+    color: #fd665e; }
   @media (min-width: 768px) {
     .header-nav__list-link {
       font-size: 18px; } }
@@ -419,6 +421,8 @@ a {
   padding: 4px 24px;
   font-size: 14px;
   line-height: 40px; }
+  .header-user-info__sign-in-btn:hover {
+    color: #fd665e; }
 
 .header-user-info__sign-up-btn {
   padding: 4px 24px;
@@ -427,6 +431,13 @@ a {
   border-radius: 4px;
   font-size: 14px;
   line-height: 40px; }
+  .header-user-info__sign-up-btn:hover {
+    color: #fd665e;
+    background-color: #ffffff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 2px solid #fd665e;
+    padding: 0px 22px; }
 
 .hamburger-btn {
   cursor: pointer;
@@ -689,14 +700,14 @@ a {
   @media (min-width: 768px) {
     .advantages__img {
       display: block;
-      width: 50%;
+      width: 100%;
       height: auto;
       -o-object-fit: cover;
          object-fit: cover;
       background-repeat: no-repeat; } }
   @media (min-width: 1440px) {
     .advantages__img {
-      width: 48%;
+      width: 100%;
       background-size: 100% 100%; } }
 
 @media (min-width: 768px) {
@@ -894,6 +905,9 @@ a {
       background-repeat: no-repeat;
       background-size: 60%;
       background-position: -50px -20px; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 768px) and (min-resolution: 2dppx) {
+    .book-consult__container {
+      background-image: url(../img/book-consult-img-2x.png); } }
   @media (min-width: 1440px) {
     .book-consult__container {
       min-height: 887px;
@@ -1062,6 +1076,8 @@ a {
   font-weight: 600;
   color: #585858;
   padding: 10px; }
+  .footer__link:hover {
+    color: #fd665e; }
 
 .footer-logo {
   margin: 20px 0;

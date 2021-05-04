@@ -81,6 +81,10 @@
     line-height: 40px;
     color: $brownFont;
 
+    &:hover {
+        color: $tomato;
+    }
+
     @media (min-width: $tablet-width){
         font-size: 18px;
     }
@@ -169,7 +173,11 @@ background-color: #ffffff;
     color: $brownFont;
     padding: 4px 24px;
     font-size: 14px;
-line-height: 40px;
+    line-height: 40px;
+
+    &:hover {
+        color: $tomato;
+    }
 }
 
 .header-user-info__sign-up-btn{
@@ -180,6 +188,15 @@ line-height: 40px;
     border-radius: 4px;
     font-size: 14px;
 line-height: 40px;
+
+&:hover {
+    color: $tomato;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid $tomato;
+    padding: 0px 22px;
+
+}
 }
 
 
