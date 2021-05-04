@@ -16,6 +16,10 @@
         max-width: $desktop-container;
     }
 
+    @media (min-width: $desktop-width) {
+        margin-top: 60px;
+    }
+
 
 }
 
