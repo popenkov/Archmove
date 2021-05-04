@@ -7,7 +7,15 @@
     <meta name="Description" content="Build your dream house">
     <title>Build your dream house</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="/build/css/style.min.css">
+
+    <link rel="preload" href="/fonts/NewYorkExtraLargeBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/SFUIDisplay-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/SFUIDisplay-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/SFUIDisplay-Light.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/SFUIDisplay-Semibold.woff" as="font" crossorigin="anonymous">
+
 
 
 </head>
@@ -15,7 +23,9 @@
 <div class="popup">
     <form class="popup-form" method="GET" action="https://echo.htmlacademy.ru">
         <button class="popup__submit-input" type="submit" aria-label="Submit your search request">
-            <img src="img/icons/loop.svg">
+            <svg height="14" width="14">
+                <use xlink:href="img/sprite.svg#loop"></use>
+            </svg>
         </button>
         <input class="popup-input" type="text" name="Search" aria-label="Search on our webiste"
             placeholder="Your search request" autofocus>
@@ -28,12 +38,12 @@
     <header class="header">
         <div class="header-container">
             <div class="header-logo">
-                <a class="header-logo__link">
-                    <img class="header-logo__img" src="img/logo-arch.svg">
+                <a href="#" class="header-logo__link">
+                    <img class="header-logo__img" width="62" height="28" src="img/logo-arch.svg" alt="Archmove logo">
                 </a>
             </div>
 
-            <button class="hamburger-btn">
+            <button aria-label="Open menu" class="hamburger-btn">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -53,7 +63,12 @@
 
 
             <div class="header-user-info">
-                <button class="header-user-info__search-button"><img src="img/icons/loop.svg"></button>
+                <button aria-label="Search button" class="header-user-info__search-button">
+                    <svg class="header-user-info__search-button-img" height="16" width="16">
+                        <use xlink:href="img/sprite.svg#loop"></use>
+                    </svg>
+                </button>
+
                 <a href="#" class="header-user-info__sign-in-btn">Sign In</a>
                 <a href="#" class="header-user-info__sign-up-btn">Sign Up</a>
             </div>
@@ -80,9 +95,12 @@
                             consultation</button>
                     </div>
 
+                    <div class="promo__photo-container">
                     <picture>
-                        <img class="promo__photo" src="img/main-img.jpg" srcset="img/main-img-2x.jpg 2x" alt="image of interior">
+                        <source type="image/webp" srcset="img/content/main-img.webp 1x, img/content/main-img-2x.webp 2x">
+                        <img class="promo__photo" src="img/content/main-img.jpg" srcset="img/content/main-img-2x.jpg 2x" alt="image of interior" loading=lazy>
                     </picture>
+                </div>
 
 
                 </div>
@@ -99,10 +117,18 @@
                             for
                             you</h2>
                         <div class="our-work__slider-buttons slider__buttons">
-                            <button class="our-work__slider-button our-work__slider-previous "><img
-                                    src="img/icons/previous-arrow.svg"></button>
-                            <button class="our-work__slider-button our-work__slider-next "><img
-                                    src="img/icons/next-arrow.svg"></button>
+                            <button class="our-work__slider-button our-work__slider-previous ">
+                                <svg class="slider-button-img" height="16" width="14">
+                                    <use xlink:href="img/sprite.svg#previous-arrow"></use>
+                                </svg>
+
+                            </button>
+
+                            <button class="our-work__slider-button our-work__slider-next ">
+                                <svg class="slider-button-img" height="16" width="14">
+                                    <use xlink:href="img/sprite.svg#next-arrow"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-wrapper">
@@ -110,7 +136,8 @@
                         <div class="swiper-slide">
                             <div class="image-slider__image">
                                 <picture>
-                                    <img class="image-slider__image-img" src="img/our-works-img.jpg" srcset="img/our-works-img-2x.jpg 2x">
+                                    <source type="image/webp" srcset="img/content/our-works-img.webp 1x, img/content/our-works-img-2x.webp 2x">
+                                    <img class="image-slider__image-img" src="img/content/our-works-img.jpg" srcset="img/content/our-works-img-2x.jpg 2x" alt="Photo of our works">
                                 </picture>
                             </div>
                         </div>
@@ -118,7 +145,8 @@
                         <div class="swiper-slide">
                             <div class="image-slider__image">
                                 <picture>
-                                    <img class="image-slider__image-img" src="img/our-works-img-2.jpg" srcset="img/our-works-img-2-2x.jpg 2x">
+                                    <source type="image/webp" srcset="img/content/our-works-img-2.webp 1x, img/content/our-works-img-2-2x.webp 2x">
+                                    <img class="image-slider__image-img" src="img/content/our-works-img-2.jpg" srcset="img/content/our-works-img-2-2x.jpg 2x" alt="Photo of our works">
                                 </picture>
                             </div>
                         </div>
@@ -126,7 +154,8 @@
                         <div class="swiper-slide">
                             <div class="image-slider__image">
                                 <picture>
-                                    <img class="image-slider__image-img" src="img/our-works-img-3.jpg" srcset="img/our-works-img-3-2x.jpg 2x">
+                                    <source type="image/webp" srcset="img/content/our-works-img-3.webp 1x, img/content/our-works-img-3-2x.webp 2x">
+                                    <img class="image-slider__image-img" src="img/content/our-works-img-3.jpg" srcset="img/content/our-works-img-3-2x.jpg 2x" alt="Photo of our works">
                                 </picture>
                             </div>
                         </div>
@@ -134,7 +163,8 @@
                         <div class="swiper-slide">
                             <div class="image-slider__image">
                                 <picture>
-                                    <img class="image-slider__image-img" src="img/our-works-img-4.jpg" srcset="img/our-works-img-4-2x.jpg 2x">
+                                    <source type="image/webp" srcset="img/content/our-works-img-4.webp 1x, img/content/our-works-img-4-2x.webp 2x">
+                                    <img class="image-slider__image-img" src="img/content/our-works-img-4.jpg" srcset="img/content/our-works-img-4-2x.jpg 2x" alt="Photo of our works">
                                 </picture>
                             </div>
                         </div>
@@ -143,7 +173,8 @@
                         <div class="swiper-slide">
                             <div class="image-slider__image">
                                 <picture>
-                                    <img class="image-slider__image-img" src="img/our-works-img-3.jpg" srcset="img/our-works-img-3-2x.jpg 2x">
+                                    <source type="image/webp" srcset="img/content/our-works-img-3.webp 1x, img/content/our-works-img-3-2x.webp 2x">
+                                    <img class="image-slider__image-img" src="img/content/our-works-img-3.jpg" srcset="img/content/our-works-img-3-2x.jpg 2x" alt="Photo of our works">
                                 </picture>
                             </div>
                         </div>
@@ -151,7 +182,8 @@
                         <div class="swiper-slide">
                             <div class="image-slider__image">
                                 <picture>
-                                    <img class="image-slider__image-img" src="img/our-works-img.jpg" srcset="img/our-works-img-2x.jpg 2x">
+                                    <source type="image/webp" srcset="img/content/our-works-img.webp 1x, img/content/our-works-img-2x.webp 2x">
+                                    <img class="image-slider__image-img" src="img/content/our-works-img.jpg" srcset="img/content/our-works-img-2x.jpg 2x" alt="Photo of our works">
                                 </picture>
                             </div>
                         </div>
@@ -174,14 +206,15 @@
                 <div class="advantages__description-wrapper">
 
                     <picture>
-                        <img class="advantages__img" src="img/our-team.jpg" srcset="img/our-team-2x.jpg 2x" alt="our team photography">
+                        <source type="image/webp" srcset="img/content/our-team.webp 1x, img/content/our-team-2x.webp 2x">
+                        <img class="advantages__img" src="img/content/our-team.jpg" srcset="img/content/our-team-2x.jpg 2x" alt="our team photography" loading=lazy>
                     </picture>
 
                     <article class="advantages__advantages">
                         <ul class="advantages__advantages-list">
                             <li class="advantages__advantages-list-item">
                                 <img class="advantages__advantages-logo advantages-guaranty"
-                                    src="img/advantages-guaranty.svg">
+                                    src="img/advantages-guaranty.svg" alt="Guaranty">
                                 <div class="advantages__description">
                                     <h3 class="advantages__advantages-title">100% guaranteed project completion</h3>
                                     <p class="advantages__advantages-description">Build safe, comfortable and
@@ -192,7 +225,7 @@
                             </li>
 
                             <li class="advantages__advantages-list-item">
-                                <img class="advantages__advantages-logo advantages-fees" src="img/advantages-fees.svg">
+                                <img class="advantages__advantages-logo advantages-fees" src="img/advantages-fees.svg" alt="Fees Policy">
                                 <div class="advantages__description">
                                     <h3 class="advantages__advantages-title">No additional fees</h3>
                                     <p class="advantages__advantages-description">There are no hidden costs. The value
@@ -204,7 +237,7 @@
 
                             <li class="advantages__advantages-list-item">
                                 <img class="advantages__advantages-logo advantages-escort"
-                                    src="img/advantages-escort.svg">
+                                    src="img/advantages-escort.svg" alt="Escort Policy">
                                 <div class="advantages__description">
                                     <h3 class="advantages__advantages-title">Get escort from the Team</h3>
                                     <p class="advantages__advantages-description">Monitor reports from the Arsitag team
@@ -227,7 +260,7 @@
 
                 <h2 class="reviews__title">Sound Too Good <br class="promo__title-brake"> To Be True?</h2>
 
-                <img class="reviews__blockquote-icon" src="img/blockquote-icon.svg">
+                <img class="reviews__blockquote-icon" src="img/blockquote-icon.svg" alt="blockquote icon">
 
                 <!-- Slider main container -->
                 <div class="swiper-container reviews-slider">
@@ -288,16 +321,16 @@
                     <div class="reviews__toggles   slider__buttons">
                         <button class="reviews-slider__toggle reviews-slider__toggle--before" type="button"
                             aria-label="Previous-review">
-                            <img src="img/icons/previous-arrow.svg">
-
-
+                            <svg class="slider-button-img" height="16" width="14">
+                                <use xlink:href="img/sprite.svg#previous-arrow"></use>
+                            </svg>
                         </button>
                         <button class="reviews-slider__toggle reviews-slider__toggle--next" type="button"
                             aria-label="Next-review">
-                            <img src="img/icons/next-arrow.svg">
-
+                            <svg class="slider-button-img" height="16" width="14">
+                                <use xlink:href="img/sprite.svg#next-arrow"></use>
+                            </svg>
                         </button>
-
                     </div>
 
                 </div>
@@ -326,31 +359,31 @@
 
 
                     <li class="our-partners__list-item">
-                        <a href="#" class="our-partners__list-link">
+                        <a aria-label="our partners link" href="#" class="our-partners__list-link">
                             <div class="our-partners__logo our-partners__logo-1"></div>
                         </a>
                     </li>
 
                     <li class="our-partners__list-item">
-                        <a href="#" class="our-partners__list-link">
+                        <a aria-label="our partners link"  href="#" class="our-partners__list-link">
                             <div class="our-partners__logo our-partners__logo-2"></div>
                         </a>
                     </li>
 
                     <li class="our-partners__list-item">
-                        <a href="#" class="our-partners__list-link">
+                        <a aria-label="our partners link"  href="#" class="our-partners__list-link">
                             <div class="our-partners__logo our-partners__logo-3"></div>
                         </a>
                     </li>
 
                     <li class="our-partners__list-item">
-                        <a href="#" class="our-partners__list-link">
+                        <a aria-label="our partners link"  href="#" class="our-partners__list-link">
                             <div class="our-partners__logo our-partners__logo-4"></div>
                         </a>
                     </li>
 
                     <li class="our-partners__list-item">
-                        <a href="#" class="our-partners__list-link">
+                        <a aria-label="our partners link"  href="#" class="our-partners__list-link">
                             <div class="our-partners__logo our-partners__logo-5"></div>
                         </a>
                     </li>
@@ -386,7 +419,7 @@
 
                 <div class="footer-logo">
                     <a class="footer-logo__link" href="#">
-                        <img class="footer-logo__img" src="img/logo-arch.svg">
+                        <img width="62" height="28" class="footer-logo__img" src="img/logo-arch.svg" alt="Archmove logo">
                     </a>
                 </div>
 
@@ -400,8 +433,7 @@
     </main>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 
 
 

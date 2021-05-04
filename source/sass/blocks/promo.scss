@@ -83,20 +83,37 @@ color: #000000;
 }
 }
 
+
+.promo__photo-container {
+    @media (min-width: $tablet-width) {
+
+        width: 45%;
+
+    }
+
+    @media (min-width: $desktop-width) {
+        width: auto;
+
+    }
+}
+
 .promo__photo {
     display: none;
 
     @media (min-width: $tablet-width) {
         display: block;
-        width: 50%;
+        width: 100%;
+        max-height: 300px;
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
         background-repeat: no-repeat;
     }
 
     @media (min-width: $desktop-width) {
-        width: 68%;
-        object-fit: contain;
+        width: 765px;
+        height: 480px;
+        max-height: none;
+
     }
 }
 

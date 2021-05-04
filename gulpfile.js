@@ -46,7 +46,7 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-    return gulp.src("source/js/bundle.js")
+    return gulp.src("source/js/script.js")
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
@@ -72,9 +72,9 @@ exports.images = images;
 // WebP
 
 const createWebp = () => {
-    return gulp.src("source/img/**/*.{jpg,png}")
+    return gulp.src("source/img/content/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("build/img/content"))
 }
 
 exports.createWebp = createWebp;

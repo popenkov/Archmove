@@ -1,21 +1,16 @@
 //swiper
 .swiper-container {
     width: auto;
-
   }
 
   .swiper-container {
       margin: 0;
-
   }
 
 
 
 
   .swiper-slide img {
-
-
-
 
     width: 100%;
     background-size: cover;
@@ -34,4 +29,12 @@
     border: none;
     padding: 10px;
     background-color: #f8f8f8;
+ }
+
+ .slider-button-img {
+     cursor: pointer;
+    fill: $brownFont;
+    &:hover {
+    fill: #FD665E;
+    }
  }
