@@ -8,6 +8,8 @@ body {
 
 .body_container {
     overflow: hidden;
+    width: 100vw;
+    /* height: 100vh; */
 }
 
 li {
@@ -22,8 +24,8 @@ a {
 
 
 .body__no-scroll {
-    height: 100%;
+    padding-top: 5px;
     overflow: hidden;
-    
+
 }
 

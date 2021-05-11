@@ -74,9 +74,9 @@ function showMenu () {
     userList.classList.toggle('header-user-info--show');
     /* menuContainer.classList.toggle('header__menu-container--show'); */
     document.addEventListener('keydown', closeMenu);
-    siteBody.classList.add('body__no-scroll');
+    siteBody.classList.toggle('body__no-scroll');
     document.addEventListener('keydown', closeMenuOnEsc);
-    
+
 }
 
 function closeMenu () {
@@ -92,8 +92,13 @@ document.removeEventListener('keydown', closeMenuOnEsc);
 hamburgerBtn.addEventListener('click', function () {
     toogleHamburger();
     showMenu();
+
 }
 )
+
+
+
+
 
 window.addEventListener(`resize`, () => {
     closeMenu();
@@ -139,11 +144,11 @@ let modalSendRequestButton = document.querySelector('.popup__submit-input');
     function openSearchPanel () {
         if (document.body.offsetHeight > window.innerHeight) {
             siteBody.classList.add('body__no-scrollbar');
-           
+
         }
 
         siteBody.classList.add('body__no-scroll');
-        
+
         modalSearchWindow.classList.remove('popup');
         modalSearchWindow.classList.add('popup-show');
         searchInput.focus();
