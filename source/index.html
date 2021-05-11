@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- 
+desltop
+4. У футера вертикальные отступы меньше, чем на макете
+30 vs
+
+Планшет:
+5. Доработать шапку, чтобы выезжала поверх всего экрана
+6. Добавить отступ между картинкой и текстом, уменьшив ширину картинки https://prnt.sc/12sk5zh
+7. https://prnt.sc/12sk92t горизонтальный скролл из-за выезжающего элемента
+
+Дополнительно:
+8 Решить проблему с морганием при наведении на лого - https://prnt.sc/12sk16d
+9. Доработать картинки, чтобы сохранялись пропорции при изменении ширины - https://prnt.sc/12sk4pj ПРО ВЫСОТУ
+10. При открытии поиска - дергается страница -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -204,12 +219,12 @@
                 <h2 class="advantages__title">Build your needs <br class="promo__title-brake"> with Archmove</h2>
 
                 <div class="advantages__description-wrapper">
-
-                    <picture>
-                        <source type="image/webp" srcset="img/content/our-team.webp 1x, img/content/our-team-2x.webp 2x">
-                        <img class="advantages__img" src="img/content/our-team.jpg" srcset="img/content/our-team-2x.jpg 2x" alt="our team photography" loading=lazy>
-                    </picture>
-
+                    <div class="advantages__photo-wrapper">
+                        <picture>
+                            <source type="image/webp" srcset="img/content/our-team.webp 1x, img/content/our-team-2x.webp 2x">
+                            <img class="advantages__img" src="img/content/our-team.jpg" srcset="img/content/our-team-2x.jpg 2x" alt="our team photography" loading=lazy>
+                        </picture>
+                    </div>
                     <article class="advantages__advantages">
                         <ul class="advantages__advantages-list">
                             <li class="advantages__advantages-list-item">

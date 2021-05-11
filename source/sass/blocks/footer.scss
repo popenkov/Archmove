@@ -12,7 +12,8 @@
         margin: 0 auto;
 
         @media (min-width: $tablet-width) {
-            padding: 20px 0;
+            
+            margin: 44px auto;
 
             max-width: $desktop-container;
             display: flex;
