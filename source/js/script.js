@@ -4,13 +4,9 @@ new Swiper('.image-slider', {
         nextEl: '.our-work__slider-next ',
         prevEl: '.our-work__slider-previous ',
       },
-
       spaceBetween: 10,
 
-
       initialSlide: 0,
-
-
 
       speed: 800,
 
@@ -49,7 +45,6 @@ new Swiper('.reviews-slider', {
 
       speed: 800,
 
-
 });
 
 
@@ -74,8 +69,8 @@ function showMenu () {
     userList.classList.toggle('header-user-info--show');
     /* menuContainer.classList.toggle('header__menu-container--show'); */
     document.addEventListener('keydown', closeMenu);
-    siteBody.classList.toggle('body__no-scroll');
-    document.addEventListener('keydown', closeMenuOnEsc);
+    siteBody.classList.toggle('body__no-scroll--hb');
+    /* document.addEventListener('keydown', closeMenuOnEsc); */
 
 }
 
@@ -85,9 +80,11 @@ function closeMenu () {
     /* menuContainer.classList.remove('header__menu-container--show'); */
     hamburgerBtn.classList.remove("change");
     siteBody.classList.remove('body__no-scroll');
+    siteBody.classList.remove('body__no-scroll--hb');
+
 }
 
-document.removeEventListener('keydown', closeMenuOnEsc);
+/* document.removeEventListener('keydown', closeMenuOnEsc); */
 
 hamburgerBtn.addEventListener('click', function () {
     toogleHamburger();
@@ -108,8 +105,8 @@ window.addEventListener(`resize`, () => {
 
 //escape
 
-function closeMenuOnEsc  (evt) {
-    /* closeSearchPanel(); */
+/* function closeMenuOnEsc  (evt) {
+
     if (evt.keyCode == ESCAPE_BUTTON && navigation.classList.contains('header-nav__list--show')) {
         navigation.classList.remove('header-nav__list--show');
         userList.classList.remove('header-user-info--show');
@@ -117,7 +114,7 @@ function closeMenuOnEsc  (evt) {
     }
 }
 
-
+ */
 
 
 
@@ -176,7 +173,6 @@ let modalSendRequestButton = document.querySelector('.popup__submit-input');
 
 
     searchButton.addEventListener ('click', function () {
-        console.log('123');
         closeMenu();
         if (hamburgerBtn.classList.contains('change')) {
             closeHamburger();

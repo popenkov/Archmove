@@ -24,8 +24,13 @@ a {
 
 
 .body__no-scroll {
-    padding-top: 5px;
     overflow: hidden;
+}
 
+.body__no-scroll--hb {
+    overflow: hidden;
+    @media (min-width: $tablet-width) {
+        padding-top: 5px;
+    }
 }
 
