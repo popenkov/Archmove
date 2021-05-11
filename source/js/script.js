@@ -13,11 +13,11 @@ new Swiper('.image-slider', {
       height: 500,
 
       breakpoints: {
-        '@0.45': {
+        '@0.1': {
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        '@0.75': {
+        '@0.60': {
           slidesPerView: 3,
           spaceBetween: 20,
         },
