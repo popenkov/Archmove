@@ -59,6 +59,10 @@
     width: 167px;
     height: 57px;
 }
+.our-partners__logo-1::before{
+    content: '';
+    background-image: url(../img/partners-logo-1--colored.png);
+}
 
 .our-partners__logo-1:hover {
     background-image: url(../img/partners-logo-1--colored.png);
@@ -69,6 +73,11 @@
     background-image: url(../img/partners-logo-2.png);
     width: 140px;
     height: 139px;
+}
+
+.our-partners__logo-2::before{
+    content: '';
+    background-image: url(../img/partners-logo-2--colored.png);
 }
 
 .our-partners__logo-2:hover {
@@ -82,6 +91,11 @@
     height: 57px;
 }
 
+.our-partners__logo-3::before{
+    content: '';
+    background-image: url(../img/partners-logo-3--colored.png);
+}
+
 .our-partners__logo-3:hover {
     background-image: url(../img/partners-logo-3--colored.png);
     border: none;
@@ -93,6 +107,11 @@
     height: 62px;
 }
 
+.our-partners__logo-4::before{
+    content: '';
+    background-image: url(../img/partners-logo-4--colored.png);
+}
+
 .our-partners__logo-4:hover {
     background-image: url(../img/partners-logo-4--colored.png);
     border: none;
@@ -102,6 +121,11 @@
     background-image: url(../img/partners-logo-5.png);
     width: 213px;
     height: 121px;
+}
+
+.our-partners__logo-5::before{
+    content: '';
+    background-image: url(../img/partners-logo-5--colored.png);
 }
 
 .our-partners__logo-5:hover {

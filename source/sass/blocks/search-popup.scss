@@ -14,15 +14,17 @@
     width: 50%;
     transition: transform 1s ease-out;
 
-    z-index: 2;
+    z-index: 12;
 
     @media (min-width: $tablet-width) {
 
         top: 10px;
+        z-index: 102;
     }
 
     @media (min-width: $desktop-width) {
         top: 30px;
+        z-index: 102;
     }
 }
 

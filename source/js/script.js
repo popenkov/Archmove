@@ -1,3 +1,4 @@
+
 new Swiper('.image-slider', {
     navigation: {
         nextEl: '.our-work__slider-next ',
@@ -61,6 +62,8 @@ let ESCAPE_BUTTON = '27';
 let hamburgerBtn = document.querySelector('.hamburger-btn');
 let navigation = document.querySelector('.header-nav__list');
 let userList = document.querySelector('.header-user-info');
+let menuContainer = document.querySelector('.header__menu-container');
+let siteBody = document.querySelector('body');
 
 function toogleHamburger() {
     hamburgerBtn.classList.toggle("change");
@@ -69,7 +72,19 @@ function toogleHamburger() {
 function showMenu () {
     navigation.classList.toggle('header-nav__list--show');
     userList.classList.toggle('header-user-info--show');
+    /* menuContainer.classList.toggle('header__menu-container--show'); */
+    document.addEventListener('keydown', closeMenu);
+    siteBody.classList.add('body__no-scroll');
     document.addEventListener('keydown', closeMenuOnEsc);
+    
+}
+
+function closeMenu () {
+    navigation.classList.remove('header-nav__list--show');
+    userList.classList.remove('header-user-info--show');
+    /* menuContainer.classList.remove('header__menu-container--show'); */
+    hamburgerBtn.classList.remove("change");
+    siteBody.classList.remove('body__no-scroll');
 }
 
 document.removeEventListener('keydown', closeMenuOnEsc);
@@ -77,9 +92,14 @@ document.removeEventListener('keydown', closeMenuOnEsc);
 hamburgerBtn.addEventListener('click', function () {
     toogleHamburger();
     showMenu();
-
 }
 )
+
+window.addEventListener(`resize`, () => {
+    closeMenu();
+  });
+
+
 
 //escape
 
@@ -113,12 +133,17 @@ let searchInput = document.querySelector('.popup-input');
 let searchCloseBtn = document.querySelector('.popup__close-input');
 let submitSearchBtn = document.querySelector('.popup__close-input');
 let modalSendRequestButton = document.querySelector('.popup__submit-input');
-let siteBody = document.querySelector('body');
 
 
 
     function openSearchPanel () {
+        if (document.body.offsetHeight > window.innerHeight) {
+            siteBody.classList.add('body__no-scrollbar');
+           
+        }
+
         siteBody.classList.add('body__no-scroll');
+        
         modalSearchWindow.classList.remove('popup');
         modalSearchWindow.classList.add('popup-show');
         searchInput.focus();
@@ -146,6 +171,8 @@ let siteBody = document.querySelector('body');
 
 
     searchButton.addEventListener ('click', function () {
+        console.log('123');
+        closeMenu();
         if (hamburgerBtn.classList.contains('change')) {
             closeHamburger();
         }
