@@ -21,10 +21,6 @@ new Swiper('.image-slider', {
           slidesPerView: 3,
           spaceBetween: 20,
         },
-        /* '@1.60': {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        }, */
       }
 
 
@@ -57,7 +53,6 @@ let ESCAPE_BUTTON = '27';
 let hamburgerBtn = document.querySelector('.hamburger-btn');
 let navigation = document.querySelector('.header-nav__list');
 let userList = document.querySelector('.header-user-info');
-let menuContainer = document.querySelector('.header__menu-container');
 let siteBody = document.querySelector('body');
 
 function toogleHamburger() {
@@ -67,29 +62,25 @@ function toogleHamburger() {
 function showMenu () {
     navigation.classList.toggle('header-nav__list--show');
     userList.classList.toggle('header-user-info--show');
-    /* menuContainer.classList.toggle('header__menu-container--show'); */
     document.addEventListener('keydown', closeMenu);
     siteBody.classList.toggle('body__no-scroll--hb');
-    /* document.addEventListener('keydown', closeMenuOnEsc); */
+    document.addEventListener('keydown', closeMenuOnEsc);
 
 }
 
 function closeMenu () {
     navigation.classList.remove('header-nav__list--show');
     userList.classList.remove('header-user-info--show');
-    /* menuContainer.classList.remove('header__menu-container--show'); */
     hamburgerBtn.classList.remove("change");
     siteBody.classList.remove('body__no-scroll');
     siteBody.classList.remove('body__no-scroll--hb');
 
 }
 
-/* document.removeEventListener('keydown', closeMenuOnEsc); */
 
 hamburgerBtn.addEventListener('click', function () {
     toogleHamburger();
     showMenu();
-
 }
 )
 
@@ -105,16 +96,17 @@ window.addEventListener(`resize`, () => {
 
 //escape
 
-/* function closeMenuOnEsc  (evt) {
+ function closeMenuOnEsc  (evt) {
 
     if (evt.keyCode == ESCAPE_BUTTON && navigation.classList.contains('header-nav__list--show')) {
         navigation.classList.remove('header-nav__list--show');
         userList.classList.remove('header-user-info--show');
         hamburgerBtn.classList.toggle("change");
+        
     }
 }
 
- */
+
 
 
 
@@ -205,6 +197,17 @@ let modalSendRequestButton = document.querySelector('.popup__submit-input');
         }
 
     })
+
+  /*   function closeMenuOnEsc  (evt) {
+
+        if (evt.keyCode == ESCAPE_BUTTON && modalSearchWindow.classList.contains('popup-show')) {
+            modalSearchWindow.classList.remove('popup-show');
+          /*   userList.classList.remove('header-user-info--show');
+            hamburgerBtn.classList.toggle("change"); */
+            
+     /*    }
+    }
+     */
 
 
 
