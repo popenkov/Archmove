@@ -17,10 +17,14 @@ new Swiper('.image-slider', {
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        '@0.60': {
+        '@0.66': {
           slidesPerView: 3,
           spaceBetween: 20,
         },
+        /* '@1.00': {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          }, */
       }
 
 
