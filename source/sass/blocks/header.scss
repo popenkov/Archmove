@@ -92,8 +92,6 @@
     }
 }
 
-.header__menu-container{}
-
 .header-nav__list--show {
     margin: 0;
     padding: 0;
@@ -179,18 +177,19 @@ background-color: #ffffff;
     @media (max-width: $tablet-width) {
         width: 100%;
         left: 50%;
+        
 
         transform: translateX(-50%);
         box-shadow: none;
     }
 
     @media (min-width: $tablet-width) {
-        /* display: none; */
-        top: 0;
-        right: 140px;
-        width: 100%;
-        /* position: static; */
-        width: 250px;
+        position: absolute;
+        top: -5px;
+        right: 80px;
+        /* width: 100%; */
+ 
+        /* width: 250px; */
         box-shadow: none;
     }
 
