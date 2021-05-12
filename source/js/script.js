@@ -1,16 +1,12 @@
-
 new Swiper('.image-slider', {
     navigation: {
         nextEl: '.our-work__slider-next ',
         prevEl: '.our-work__slider-previous ',
       },
       spaceBetween: 10,
-
       initialSlide: 0,
-
       speed: 800,
-
-      height: 500,
+      
 
       breakpoints: {
         '@0.1': {
@@ -21,10 +17,6 @@ new Swiper('.image-slider', {
           slidesPerView: 3,
           spaceBetween: 20,
         },
-        /* '@1.00': {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          }, */
       }
 
 
@@ -36,15 +28,10 @@ new Swiper('.reviews-slider', {
         nextEl: '.reviews-slider__toggle--next',
         prevEl: '.reviews-slider__toggle--before',
       },
-
       autoHeight: true,
-
       initialSlide: 0,
-
       slidesPerView: 1,
-
       speed: 800,
-
 });
 
 
@@ -53,7 +40,6 @@ new Swiper('.reviews-slider', {
 
 //hamburger
 let ESCAPE_BUTTON = '27';
-
 let hamburgerBtn = document.querySelector('.hamburger-btn');
 let navigation = document.querySelector('.header-nav__list');
 let userList = document.querySelector('.header-user-info');
@@ -66,10 +52,8 @@ function toogleHamburger() {
 function showMenu () {
     navigation.classList.toggle('header-nav__list--show');
     userList.classList.toggle('header-user-info--show');
-    document.addEventListener('keydown', closeMenu);
     siteBody.classList.toggle('body__no-scroll--hb');
     document.addEventListener('keydown', closeMenuOnEsc);
-
 }
 
 function closeMenu () {
@@ -88,13 +72,15 @@ hamburgerBtn.addEventListener('click', function () {
 }
 )
 
-
-
-
-
 window.addEventListener(`resize`, () => {
     closeMenu();
   });
+
+/* document.addEventListener('click', (evt) => {
+    if (evt.target != navigation && evt.target != userList) {
+        closeMenu();
+    }
+}) */
 
 
 

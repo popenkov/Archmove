@@ -177,10 +177,7 @@ background-color: #ffffff;
     @media (max-width: $tablet-width) {
         width: 100%;
         left: 50%;
-        
-
         transform: translateX(-50%);
-        box-shadow: none;
     }
 
     @media (min-width: $tablet-width) {
