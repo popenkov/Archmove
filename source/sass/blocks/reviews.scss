@@ -1,8 +1,7 @@
 .reviews {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     width: 100%;
     min-width: 380px;
-
 }
 
 .reviews__container {
@@ -13,7 +12,6 @@
 
     margin: 0 auto;
 
-
     @media (min-width: $tablet-width) {
         min-height: 350px;
 
@@ -21,34 +19,26 @@
     }
 
     @media (min-width: $desktop-width) {
-
         margin-top: 65px;
         padding-top: 65px;
-
     }
-
 }
 
 .reviews__title {
-
     padding: 0;
     margin: 20px 0;
 
-
-    font-family: 'New York Extra Large Bold';
+    font-family: "New York Extra Large Bold";
     font-size: 30px;
     line-height: 124%;
-
 
     @media (min-width: $tablet-width) {
         font-size: 42px;
     }
 
-
     @media (min-width: $desktop-width) {
-
         font-size: 48px;
-    line-height: 124%;
+        line-height: 124%;
     }
 }
 
@@ -66,12 +56,12 @@
         width: 57px;
         left: 270px;
     }
-
 }
 
 .reviews-slider {
     margin-left: 50px;
     position: relative;
+    overflow: hidden;
 
     @media (min-width: $tablet-width) {
         margin-left: 250px;
@@ -80,13 +70,11 @@
     @media (min-width: $desktop-width) {
         margin-left: 370px;
     }
-
 }
 
 .swiper-slide .reviews__slide {
     min-width: 100px;
 }
-
 
 .reviews__item {
     margin: 0;
@@ -94,49 +82,43 @@
     min-height: 150px;
     margin-bottom: 50px;
 
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
 
-    font-family: 'SF UI Display';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 160%;
+    letter-spacing: 0.01em;
 
-letter-spacing: 0.01em;
+    color: #000000;
 
-color: #000000;
-
-@media (min-width: $tablet-width) {
-    font-size: 22px;
-}
-
-    @media (min-width: $desktop-width) {
-font-size: 32px;
-line-height: 160%;
+    @media (min-width: $tablet-width) {
+        font-size: 22px;
     }
 
+    @media (min-width: $desktop-width) {
+        font-size: 32px;
+        line-height: 160%;
+    }
 }
 
 .reviews__author-name {
     width: 70%;
 
-    font-family: 'SF UI Display';
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 160%;
+    font-family: "SF UI Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
 
+    letter-spacing: 0.01em;
 
-letter-spacing: 0.01em;
-
-color: #000000;
-
+    color: #000000;
 }
 
 .reviews__author-name--bold {
     font-weight: bold;
 }
-
-
 
 .reviews__author-name {
     margin: 0;
@@ -147,11 +129,10 @@ color: #000000;
 }
 
 .reviews__toggles {
-position: absolute;
-bottom: 0;
-right: 0;
-z-index: 1;
-display: flex;
-align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
 }
-
