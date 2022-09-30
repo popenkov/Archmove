@@ -59,9 +59,9 @@
 }
 
 .reviews-slider {
+    overflow: hidden;
     margin-left: 50px;
     position: relative;
-    overflow: hidden;
 
     @media (min-width: $tablet-width) {
         margin-left: 250px;
